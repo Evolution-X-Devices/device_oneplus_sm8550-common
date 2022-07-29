@@ -125,6 +125,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
 
+# LMK
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.config.low_ram=false
+
 # Doze
 PRODUCT_PACKAGES += \
     OplusDoze
